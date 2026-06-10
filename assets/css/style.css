@@ -1,0 +1,91 @@
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  margin: 0;
+  padding: 0 1rem;
+}
+
+.site-header,
+.site-main,
+.site-footer {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.site-header {
+  padding: 1.5rem 0 1rem;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.site-header .logo img {
+  max-height: 80px;
+  width: auto;
+}
+
+.site-nav {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  line-height: 2;
+}
+
+.site-nav a {
+  white-space: nowrap;
+}
+
+.site-main {
+  padding: 1.5rem 0 3rem;
+}
+
+a { color: #b3122b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+h1 { font-size: 1.9rem; line-height: 1.2; }
+h2 { font-size: 1.4rem; margin-top: 2rem; }
+h3 { font-size: 1.15rem; }
+
+img { max-width: 100%; height: auto; }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 0.4rem 0.6rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+th { background: #f4f4f4; }
+
+.site-footer {
+  border-top: 1px solid #e2e2e2;
+  padding: 1.5rem 0 2.5rem;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* Uniform researcher photos: grid thumbnails (Researchers page) and the
+   profile photo on each ESR page are forced to a consistent size and
+   cropped to fill, so portraits of differing dimensions line up. */
+img.esr-thumb {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 4px;
+}
+
+img.esr-photo {
+  width: 200px;
+  height: 240px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 4px;
+}
